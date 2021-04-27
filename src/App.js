@@ -1,5 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from 'react'
+import Recipe from './Recipe'
+
 function App() {
 
   const APP_ID = `${process.env.REACT_APP_APP_ID}`
@@ -23,6 +25,9 @@ function App() {
         <input className='search-bar' type='text'/>
         <button className='search-button'type='submit'>Search</button>
       </form>
+      {recipes.map(recipe => (
+        <Recipe /> 
+      ))}
     </div>
   );
 }
