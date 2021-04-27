@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Recipe({title, calories, image, ingredients}) {
     return (
-        <div>
+        <div className='recipe-container'>
+            <img src={image} alt=""/>
             <h1 className='title'>{title}</h1>
             <ul className='ingredient-list'>
                 {ingredients.map(ingredient => (
@@ -10,7 +11,6 @@ export default function Recipe({title, calories, image, ingredients}) {
                 ))}
             </ul>
             <p className='calories'>Calories: {calories.toFixed(0)}</p>
-            <img src={image} alt=""/>
         </div>
     )
 }
