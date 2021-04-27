@@ -6,7 +6,7 @@ function App() {
   const APPLICATION_KEY = `${process.env.REACT_APP_APPLICATION_KEY}`
 
   const [recipes, setRecipes] = useState([]); 
-  
+
   useEffect(() => {
     getRecipes(); 
   }, []); 
@@ -14,7 +14,7 @@ function App() {
   const getRecipes = async () => {
     const response = await fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APPLICATION_KEY}`)
     const data = await response.json(); 
-    console.log(data.hits); 
+    setRecipes(data.hits)
   }
 
   return (
