@@ -30,6 +30,24 @@
   align-items: center;
 }
 
-.calories {
+.recipe-image {
+  margin: 1rem;
+  max-width: 20rem;
+  width: 50%;
+}
+
+.recipe-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  max-width: 15rem;
+}
+
+.recipe-ingredient-list {
+  margin: 0;
+}
+
+.recipe-calories {
+  margin-top: 0;
+  margin-bottom: 2rem;
   justify-content: center;
 }
