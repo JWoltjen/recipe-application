@@ -13,4 +13,5 @@ export default function Recipe({title, calories, image, ingredients}) {
             <p className='recipe-calories'>Calories: {calories.toFixed(0)}</p>
         </div>
     )
+
 }

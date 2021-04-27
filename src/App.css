@@ -1,6 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   min-height: 100vh;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .search-form {
@@ -26,14 +34,17 @@
 .recipe-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-self: center;
   align-items: center;
+  flex-direction: column;
+  min-width: 40rem;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
 }
 
 .recipe-image {
   margin: 1rem;
   max-width: 20rem;
-  width: 50%;
+  width: 75%;
 }
 
 .recipe-title {
